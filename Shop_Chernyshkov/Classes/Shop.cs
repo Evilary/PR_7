@@ -13,6 +13,9 @@ namespace Shop_Chernyshkov.Classes
         public int Price { get; set; }
 
         public Shop(string name, int price)
-        
+        {
+            this.Name = name;
+            this.Price = price;
+        }
     }
 }
