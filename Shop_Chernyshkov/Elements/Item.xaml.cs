@@ -25,8 +25,9 @@ namespace Shop_Chernyshkov.Elements
             InitializeComponent();
 
             Classes.Shop ShopData = ItemData as Classes.Shop;
-            tb_Name.Content = "Цена: " + ShopData.Price;
-            
+            tb_Name.Content = ShopData.Name;
+            tb_Price.Content = "Цена: " + ShopData.Price;
+
             if (ItemData is Classes.Children)
             {
                 Classes.Children ChildrenData = ItemData as Classes.Children;
